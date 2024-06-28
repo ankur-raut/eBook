@@ -7,4 +7,5 @@ replicate
 openai
 langchain-core
 pysqlite3-binary
+crewai-tools
 langchain-groq
