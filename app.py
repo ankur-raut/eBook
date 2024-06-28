@@ -334,7 +334,7 @@ def main():
             # serp_api_key = st.text_input(f'Enter your SerpAPI key', type="password")
             submitted = st.form_submit_button("Submit")
 
-    if api_key and serp_api_key:
+    if api_key:
         if model == 'OpenAI':
             async def setup_OpenAI():
                 loop = asyncio.get_event_loop()
