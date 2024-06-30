@@ -280,7 +280,9 @@ def generate_text(llm, chapter, sub_topics):
             "5. Enhanced insights.\n"
             "6. Addressed reviewer feedback.\n"
             "7. Creative and engaging Book chapter title.\n"
-            "8. Final draft of at least 1000 words."
+            "8. Final draft of at least 1000 words.\n"
+            "9. Don't include any agentic thoughts and just give a ready blog without any extra comments.\n"
+            "10. Do not include any reviewers comments / feedback or anything unnecessary in the final blog."
         )
     )
 
@@ -334,7 +336,7 @@ def main():
             # serp_api_key = st.text_input(f'Enter your SerpAPI key', type="password")
             submitted = st.form_submit_button("Submit")
 
-    if api_key and serp_api_key:
+    if api_key:
         if model == 'OpenAI':
             async def setup_OpenAI():
                 loop = asyncio.get_event_loop()
